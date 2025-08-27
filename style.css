@@ -1,0 +1,48 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #111;
+    }
+
+    .container {
+      display: flex;
+      width: 90%;
+      max-width: 1200px;
+      gap: 10px;
+    }
+
+    .card {
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px;
+      flex: 1;
+      height: 70vh;
+      cursor: pointer;
+      position: relative;
+      transition: flex 0.5s ease-in-out;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+    }
+
+    .card h3 {
+      color: #fff;
+      font-size: 24px;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.4);
+      width: 100%;
+      text-align: center;
+    }
+
+    .card.active {
+      flex: 5;
+    }
